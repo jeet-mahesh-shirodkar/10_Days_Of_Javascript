@@ -19,4 +19,11 @@
      return result;
  }
 
- console.log(factorial(3),factorial2(4));
+ function factorial3(n){
+    if(n === 0){
+        return 1;
+    }
+    return n * factorial3(n-1);
+ }
+
+ console.log(factorial(3),factorial2(4),factorial3(5));
