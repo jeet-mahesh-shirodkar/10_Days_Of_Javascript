@@ -15,7 +15,7 @@ The second line contains n space-separated numbers describing the elements in nu
  let nums=[1,2,3,6,6,5];
 function getSecondLargest(nums) {
     // Complete the function
-    for(i=0;i<=nums.length;i++){
+    for(i=0;i<nums.length;i++){
         nums[i];
     }
 }
