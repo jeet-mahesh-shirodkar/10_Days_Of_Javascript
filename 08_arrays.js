@@ -12,22 +12,27 @@ The first line contains an integer,n , denoting the size of the nums array.
 The second line contains n space-separated numbers describing the elements in nums.
  */
 
-let nums=[1,2,3,6,6,5,7,,9,28];
+let nums=[-6,-2,0,1,2,3,6,6,5,7,35,9,28];
 
 function getSecondLargest(nums) {
     // Complete the function
     let largestNumber = nums[0];
     let secondLargest =nums[0];
+    let smallestNumber =nums[0];
+
     for(i=0;i<nums.length;i++){
           if(largestNumber<nums[i]){
             secondLargest=largestNumber;
             largestNumber=nums[i]
           }
+          else if(smallestNumber>nums[i]){
+            smallestNumber=nums[i]
+          }
           else if(secondLargest < nums[i] && largestNumber != nums[i]){
 secondLargest = nums[i]
           }
     }
-    return [secondLargest,largestNumber];
+    return [smallestNumber,secondLargest,largestNumber];
 }
 
 
