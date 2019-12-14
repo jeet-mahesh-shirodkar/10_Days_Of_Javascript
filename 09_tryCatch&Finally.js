@@ -7,3 +7,16 @@
  * Print on a new line. 
  If no exception was thrown, then this should be the reversed string; if an exception was thrown, this should be the original string.
  */
+
+function reverseString(s) {
+    s=s.split('').reverse().join('');
+    try{ 
+        console.log(s);
+      }
+      catch(e){
+             console.log(e.message);
+      }
+      finally{
+        console.log(s)
+      }
+}
