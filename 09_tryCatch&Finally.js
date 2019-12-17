@@ -9,9 +9,8 @@
  */
 
 function reverseString(s) {
-    s=s.split('').reverse().join('');
     try{ 
-        console.log(s);
+      s=s.split('').reverse().join('');
       }
       catch(e){
              console.log(e.message);
@@ -20,3 +19,5 @@ function reverseString(s) {
         console.log(s)
       }
 }
+
+console.log(reverseString("never odd or even"));
