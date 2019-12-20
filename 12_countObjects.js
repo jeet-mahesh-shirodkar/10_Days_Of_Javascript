@@ -6,12 +6,16 @@
  * The function must return a count of all such objects  o in array  that satisfy o.x = 0.y.
  */
 
-var objects =[{x:4,y:4},{x:4,y:2},{x:5,y:5},{x:3,y:2}];
+  var objects =[{x:4,y:4},{x:4,y:2},{x:5,y:5},{x:3,y:2}];
 
-function getCount(objects){
-  var count = 0;
+  function getCount(objects){
+    var count = 0;
+        for(var e in objects){
+             if(objects[e].x === objects[e].y){
+                count++;
+             }
+        }
+    return count;
+  }
 
-  return count;
-}
-
-console.log(getCount(objects));
+  console.log(getCount(objects));
