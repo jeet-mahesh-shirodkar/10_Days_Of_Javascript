@@ -8,17 +8,21 @@ Note: The perimeter method must be lowercase and spelled
  */
 
 
- class Polygon {
-   constructor(sides) {
-       this.sides = sides;
-   }
-   perimeter() {
-       var sum = 0;
-       for(var i=0;i< this.sides.length; i++){
-           sum = sum + this.sides[i];
-       }
-       return sum;
-   }
-}
+class Polygon{
+    constructor(sides){
+      this.sides= sides;
+    }
+    perimeter(){
+      let sum = 0;
+      for(i=0;i<this.sides.length;i++){
+          sum += this.sides[i];
+      }
+      return sum;
+    }
+  }
+
+ 
+const p = new Polygon([10,10]);
+console.log(p.perimeter()); 
 
 
