@@ -10,7 +10,7 @@
  * Creates an array consisting of s1 and s2 and sorts it in ascending order.
  * Returns the sorted array
  */
-
+ 
  // Function 1 without Template Literal and Function 2 with Template literal(...tried to be). 
 
 function sides(...expressions) {
