@@ -5,3 +5,10 @@
  * For example, the day name for the date 12/07/2016 is Wednesday. 
  * */
 
+function getDayName(dateString) {
+    let dayName =["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday","Saturday"];
+    // Write your code here
+    let date = new Date(dateString);
+    let day = date.getDay();
+    return dayName[day];
+}
